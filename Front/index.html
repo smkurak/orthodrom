@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    
+    <title>View Animation</title><link rel="stylesheet" href="node_modules/ol/ol.css">
+    <style>
+      .map {
+        width: 100%;
+        height: 500px;
+      }
+    </style></head>
+<body>
+    <div id="map" class="map"></div>
+
+    <button id="start">Calculate</button>
+    
+    <table style="text-align: left; height: 53px; width: 551px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+
+            <td style="height: 25px; width: 100px;"><b>LON1</b></td>
+            <td style="height: 25px; width: 100px;"><b>LAT1</b></td>
+            <td style="height: 25px; width: 100px;"><b>LON2</b></td>
+            <td style="height: 25px; width: 100px;"><b>LAT2</b></td>
+            <td style="height: 25px; width: 75px;"><b>N_POINT</b></td>
+          </tr>
+          <tr>
+              <td style="height: 25px; width: 100px;"><input size="12" name="lon1" id="lon1" value="12.5"></td>
+              <td style="height: 25px; width: 100px;"><input size="12" name="lat1" id="lat1" value="41.9"></td>
+              <td style="height: 25px; width: 100px;"><input size="12" name="lon2" id="lon2" value="150.8"></td>
+              <td style="height: 25px; width: 100px;"><input size="12" name="lat2" id="lat2" value="59.57"></td>
+              <td style="height: 25px; width: 75px;"><input size="5" name="n" id="npoint" value="100"></td>
+              </tr>
+        </tbody>
+    </table>
+  <br>
+    <textarea cols="146" rows="10" id="output" name="out"></textarea>
+        
+    <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script type="module" src="main.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+  </html>
